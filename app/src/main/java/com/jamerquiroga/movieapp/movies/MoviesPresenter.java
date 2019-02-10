@@ -13,8 +13,8 @@ public class MoviesPresenter implements MoviesMVP.Presenter {
 
     private Disposable gDisposable;
 
-    public MoviesPresenter(MoviesMVP.Model giModel) {
-        this.giModel = giModel;
+    public MoviesPresenter(MoviesMVP.Model piModel) {
+        this.giModel = piModel;
     }
 
     @Override

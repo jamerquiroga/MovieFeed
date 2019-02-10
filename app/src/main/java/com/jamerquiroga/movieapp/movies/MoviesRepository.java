@@ -1,15 +1,29 @@
 package com.jamerquiroga.movieapp.movies;
 
+import com.jamerquiroga.movieapp.http.MovieTitleApiService;
+import com.jamerquiroga.movieapp.http.MoviesExtraInfoApiService;
+import com.jamerquiroga.movieapp.http.apimodel.Result;
+
 import io.reactivex.Observable;
 
-/**
- * En este repositorio realizaremos distitos tipos de llamadas
- */
+public class MoviesRepository implements Repository {
 
-public interface MoviesRepository {
+    private MovieTitleApiService piMovieTitleApiService;
+    private MoviesExtraInfoApiService piMoviesExtraInfoApiService;
 
-    Observable<Result> getResultData();
+    public MoviesRepository(MovieTitleApiService piMovieTitleApiService, MoviesExtraInfoApiService piMoviesExtraInfoApiService) {
+        this.piMovieTitleApiService = piMovieTitleApiService;
+        this.piMoviesExtraInfoApiService = piMoviesExtraInfoApiService;
+    }
 
-    Observable<String> getCountryData();
+    @Override
+    public Observable<Result> getResultData() {
+        return null;
+    }
+
+    @Override
+    public Observable<String> getCountryData() {
+        return null;
+    }
 
 }
