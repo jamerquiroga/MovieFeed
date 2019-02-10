@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtMovieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="50 Sombras de Gray"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtMovieCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Reino Unido"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"/>
+
+</LinearLayout>
