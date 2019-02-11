@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements MoviesMVP.View {
     public void updateData(ViewModel poViewModel) {
 
         goResultList.add(poViewModel);
-        gaMovieAdapter.notifyItemChanged(goResultList.size()-1);
+        gaMovieAdapter.notifyItemInserted(goResultList.size()-1);
         Log.d(TAG, "New info: " + poViewModel.getName());
 
     }

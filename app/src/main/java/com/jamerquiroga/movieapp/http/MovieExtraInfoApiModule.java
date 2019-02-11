@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class MovieExtraInfoApiModule {
 
-    public static final String BASE_URL = "http://www.omdbapi.com/";
+    public static final String BASE_URL = "http://www.omdbapi.com";
 
     public static final String API_KEY = "319f8457";
 

@@ -23,7 +23,7 @@ public class MoviesModel implements MoviesMVP.Model {
         return Observable.zip(giRepository.getResultData(), giRepository.getCountryData(), new BiFunction<Result, String, ViewModel>() {
             @Override
             public ViewModel apply(Result result, String psCountry) throws Exception {
-                return new ViewModel(result.toString(),psCountry);
+                return new ViewModel(result.getTitle(),psCountry);
             }
         });
     }

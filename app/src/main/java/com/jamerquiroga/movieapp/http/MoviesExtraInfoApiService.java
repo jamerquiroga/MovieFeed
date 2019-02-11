@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface MoviesExtraInfoApiService {
 
-    @GET()
+    @GET("/")
     Observable<ExtraInfo> getExtraInfo(@Query("apikey") String psApiKey, @Query("t") String psCountry);
 
 }
